@@ -1,0 +1,27 @@
+toLowerCase() method==>
+                       This method is used to convert the string into lowercase letter. This method doesn't make any change in the original string.
+syntax==>
+          var str=str1.toLowerCase();
+Example==>
+<html>
+<body>
+<script type="text/javascript">
+var  str="Archana";
+document.write("Original string:"+str);
+var str1=str.toLowerCase();
+document.write("<br>New string:"+str1);
+</script>
+</body>
+</html>
+
+Example 2:-
+<html>
+<body>
+<script type="text/javascript">
+var  str="KhUsHi";
+document.write("Original string:"+str);
+var str1=str.toLowerCase();
+document.write("<br>New string:"+str1);
+</script>
+</body>
+</html>
