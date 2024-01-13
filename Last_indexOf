@@ -1,0 +1,18 @@
+lastIndexOf() method==>
+                    This method is used to search the position of a particular character in a sequence of given charvalues.
+it searching an element from the last position of the string.
+ Thismethod is case- sensitive.
+ The index position of the first character in a string is always starts with zero.
+ If n element is not present in a string , it returns -1
+syntax==>
+str.lastIndexOf("char");
+
+ <html>
+<body>
+<script type="text/javascript">
+var str="Archana";
+var index=str.lastIndexOf('a');
+document.write("index of last a in string:"+index);
+</script>
+</body>
+</html>
