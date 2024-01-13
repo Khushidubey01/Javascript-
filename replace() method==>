@@ -1,0 +1,15 @@
+replace() method==>
+               This method is used to replace a part of a given string with a new substring.
+This method searches for specified regular expression in a given string  and then replace it if the match occurs.
+syntax==>         str.replace(oldstring,newstring);
+Example==>
+<html>
+<body>
+<script type="text/javascript">
+var  str="This is javascript class";
+document.write("Original string:"+str);
+var str1=str.replace("javascript","Angularscript");
+document.write("<br>New string:"+str1);
+</script>
+</body>
+</html>
