@@ -1,0 +1,15 @@
+slice() method==>
+                  This method is used to fetch the part of the string and returns the new string.
+syntax==>
+          var str1=str.slice(start,end);
+Example==>
+<html>
+<body>
+<script type="text/javascript">
+var  str="This is input device.";
+document.write("Original string:"+str);
+var str1=str.slice(7,13);
+document.write("<br>New string:"+str1);
+</script>
+</body>
+</html>
