@@ -1,0 +1,27 @@
+concat() method==>
+                   This method combines two or more strings and returns a new string.
+This method doesn't change in the original string.
+syntax==>
+          str.concat(str1,str2,...);
+Example==>
+<html>
+<body>
+<script type="text/javascript">
+var str1="archana";
+var str2="dubey";
+document.write(str1+"  "+str2);
+</script>
+</body>
+</html>
+
+Example 2:-
+<html>
+<body>
+<script type="text/javascript">
+var str1="archana";
+var str2="dubey";
+var str3=str1.concat(" "+str2);
+document.write(str3);
+</script>
+</body>
+</html>
