@@ -1,0 +1,15 @@
+<html>
+<body>
+<script type="text/javascript">
+function show()
+{
+var x=document.getElementById("num").value;
+document.getElementById("result").innerHTML=Math.cbrt(x);
+}
+</script>
+<p><span id="result"></span></p>
+<form>
+Enter any number:
+<input type="text" id="num">
+<input type="button"onclick="show()"value="cube root">
+</form></body></html>
