@@ -1,0 +1,18 @@
+<html>
+<body>
+<script type="text/javascript">
+function show()
+{
+var x=document.getElementById("num").value;
+document.getElementById("result").innerHTML=Math.ceil(x);
+}
+</script>
+<p><span id="result"></span>
+<form>
+Enter any number:
+<input type="text" id="num">
+<input type="button" onclick="show()" value="ceil value">
+</form>
+
+</body>
+</html>
