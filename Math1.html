@@ -1,0 +1,17 @@
+<html>
+<body>
+<script type="text/javascript">
+function show()
+{
+var x=document.getElementById("num").value;
+document.getElementById("result").innerHTML=Math.abs(x);
+}
+</script>
+<form>
+Enter any number:
+<input type="text" id="num">
+<input type="button" onclick="show()" value="absolute">
+</form>
+<p><span id="result"></span>
+</body>
+</html>
