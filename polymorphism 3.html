@@ -1,0 +1,42 @@
+<html>
+<body>
+<script>
+var num1,num2;
+class A{
+res(a,b)
+{ 
+var c=a+b;
+document.write("<br><br>ADD="+c);
+}
+}
+class B {
+res(a,b)
+{ var c=a-b;
+document.write("<br><br>SUB="+c);
+}
+}
+class C {
+res(a,b)
+{ 
+var c=a*b;
+document.write("<br><br>MUL="+c);
+}
+}
+function result()
+{
+num1=parseInt(document.getElementById("fn").value);
+num2=parseInt(document.getElementById("sn").value);
+var obja=new A();
+obja.res(num1,num2);
+var objb=new B();
+objb.res(num1,num2);
+var objc=new C();
+objc.res(num1,num2);
+
+}
+
+</script>
+Enter first number:<input id="fn"><br><br>
+Enter second number:<input id="sn"><br><br>
+<button onclick="result()">result</button>
+</body></html>

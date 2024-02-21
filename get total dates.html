@@ -1,0 +1,96 @@
+<html><body><script type="text/javascript">
+function calc()
+{var obj=new Date();
+var cd=obj.getDate();
+var cm=obj.getMonth();
+var cy=obj.getFullYear();
+cm++;
+var fd=parseInt(document.getElementById("d").value);
+var fm=parseInt(document.getElementById("m").value);
+if(cm==fm)
+{cd=fd-cd;}
+else if(cy%100==0)
+{if(cy%400==0)
+{
+switch(cm)
+{
+case 1:case 3:case 5:case 7:case 8:case 10:
+case 12:{cd=31-cd; break;}
+case 2:{cd=29-cd; break;}
+case 4:case 6:case 9:
+case 11:{cd=30-cd; break;}
+
+}
+}
+else
+{
+switch(cm)
+{
+case 1:case 3:case 5:case 7:case 8:case 10:
+case 12:{cd=31-cd; break;}
+case 2:{cd=28-cd; break;}
+case 4:case 6:case 9:
+case 11:{cd=30-cd; break;}
+
+}
+
+}
+}
+else
+{if(cy%4==0)
+{
+switch(cm)
+{
+case 1:case 3:case 5:case 7:case 8:case 10:
+case 12:{cd=31-cd; break;}
+case 2:{cd=29-cd; break;}
+case 4:case 6:case 9:
+case 11:{cd=30-cd; break;}
+
+}
+}
+else
+{
+switch(cm)
+{
+case 1:case 3:case 5:case 7:case 8:case 10:
+case 12:{cd=31-cd; break;}
+case 2:{cd=28-cd; break;}
+case 4:case 6:case 9:
+case 11:{cd=30-cd; break;}
+
+}
+}
+}
+if(cm+1==fm){cd=cd+fd;}
+cm++;
+if(cm<fm)
+{
+switch(cm)
+{
+case 1:{  if(fm==1) {break; }else cd=cd+31;}
+case 2:{ if(fm==2){break; }else cd=cd+29; }
+case 3:{if(fm==3){ break;}else cd=cd+31; }
+case 4:{if(fm==4){ break;}else cd=cd+30; }
+case 5:{if(fm==5){ break;}else cd=cd+31; }
+case 6:{if(fm==6){ break;}else cd=cd+30; }
+case 7:{if(fm==7){ break;}else cd=cd+31; }
+case 8:{if(fm==8){ break;}else cd=cd+31; }
+case 9:{if(fm==9){ break;}else cd=cd+30; }
+case 10:{if(fm==10){ break;}else cd=cd+31; }
+case 11:{if(fm==11){ break;}else cd=cd+30; }
+case 12:{if(fm==12){ break;}else cd=cd+31; }
+}
+
+cd=cd+fd;
+
+}
+
+alert("Total date="+cd);
+}
+</script>
+Enter Date:<input id="d"><br><br>
+Enter month:<input id="m"><br><br>
+<input type="button" onclick="calc()" value="result">
+
+</body></html>

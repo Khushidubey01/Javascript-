@@ -1,0 +1,36 @@
+<html>
+<body>
+<script type="text/javascript">
+class P{
+display1()
+{document.write("This is P class");}}
+class Q extends P{
+display2()
+{document.write("This is Q class");}}
+class R extends Q{
+display3()
+{document.write("This is R class");}}
+class S extends R{
+display4()
+{document.write("This is S class");}}
+
+var obj1=new P();
+obj1.display1();
+document.write("<br><br>");
+var obj2=new Q();
+obj2.display2();
+document.write("<br><br>");
+var obj3=new R();
+obj3.display3();
+document.write("<br><br>");
+var obj4=new S();
+obj4.display4();
+document.write("<br><br>");
+obj4.display3();
+document.write("<br><br>");
+obj4.display2();
+document.write("<br><br>");
+obj4.display1();
+document.write("<br><br>");
+</script>
+</body></html>
